@@ -1,0 +1,8 @@
+{
+	"login": "Login",
+	"name": "Name",
+	"password": "Password",
+	"submit": "Submit",
+	"nameError": "Name is too short",
+	"passwordError": "Password is too short"
+}

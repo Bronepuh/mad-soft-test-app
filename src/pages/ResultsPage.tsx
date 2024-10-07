@@ -52,24 +52,23 @@ const ResultsPage: React.FC = () => {
 								</Text>
 							</Container>
 						)}
-						{(result && result < 3) ||
-							(result === 0 && (
-								<Text
-									size="xl"
-									w={700}
-									style={{
-										marginTop: "20px",
-										marginLeft: "auto",
-										marginRight: "auto",
-										fontSize: 40,
-										fontWeight: 700,
-										textAlign: "center",
-									}}
-									c={"green"}
-								>
-									{`${result}/3`}
-								</Text>
-							))}
+						{result !== null && result < 3 && (
+							<Text
+								size="xl"
+								w={700}
+								style={{
+									marginTop: "20px",
+									marginLeft: "auto",
+									marginRight: "auto",
+									fontSize: 40,
+									fontWeight: 700,
+									textAlign: "center",
+								}}
+								c={"green"}
+							>
+								{`${result}/3`}
+							</Text>
+						)}
 						<Button fullWidth mt="xl" onClick={handleLogout}>
 							Logout and Go back to Login
 						</Button>
